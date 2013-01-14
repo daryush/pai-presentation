@@ -1,0 +1,30 @@
+post:
+    pattern:  /
+    defaults: { _controller: "PAIBlogBundle:Post:index" }
+
+post_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "PAIBlogBundle:Post:show" }
+
+post_new:
+    pattern:  /new
+    defaults: { _controller: "PAIBlogBundle:Post:new" }
+
+post_create:
+    pattern:  /create
+    defaults: { _controller: "PAIBlogBundle:Post:create" }
+    requirements: { _method: post }
+
+post_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "PAIBlogBundle:Post:edit" }
+
+post_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "PAIBlogBundle:Post:update" }
+    requirements: { _method: post }
+
+post_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "PAIBlogBundle:Post:delete" }
+    requirements: { _method: post }

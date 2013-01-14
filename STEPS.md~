@@ -73,11 +73,6 @@ php app/console doctrine:generate:form PAIBlogBundle:Post
 
 # src/PAI/Entity/Post
 
-public function __toString()
-{
-    return $this->getTitle();
-}
-
 
 
 

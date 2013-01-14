@@ -1,0 +1,7 @@
+parameters:
+#    pai_blog.example.class: PAI\BlogBundle\Example
+
+services:
+#    pai_blog.example:
+#        class: %pai_blog.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

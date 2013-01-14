@@ -1,0 +1,34 @@
+comment:
+    pattern:  /
+    defaults: { _controller: "PAIBlogBundle:Comment:index" }
+    
+comment:
+    pattern:  /{id}/post-related
+    defaults: { _controller: "PAIBlogBundle:Comment:indexConnectedWithPost" }
+
+comment_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "PAIBlogBundle:Comment:show" }
+
+comment_new:
+    pattern:  /new
+    defaults: { _controller: "PAIBlogBundle:Comment:new" }
+
+comment_create:
+    pattern:  /create
+    defaults: { _controller: "PAIBlogBundle:Comment:create" }
+    requirements: { _method: post }
+
+comment_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "PAIBlogBundle:Comment:edit" }
+
+comment_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "PAIBlogBundle:Comment:update" }
+    requirements: { _method: post }
+
+comment_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "PAIBlogBundle:Comment:delete" }
+    requirements: { _method: post }

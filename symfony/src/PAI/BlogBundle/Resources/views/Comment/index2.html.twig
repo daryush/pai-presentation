@@ -1,0 +1,16 @@
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            
+            <td>{{ entity.comment }}</td>
+            
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
